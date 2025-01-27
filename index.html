@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Authentication</title>
-</head>
-<body>
-    <h1>Hello World</h1>
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./Resources/CSS files/style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <h1>Welcome</h1>
+        <form action="project.html" method="POST">
+        <h2>Please Login To Access</h2>
+        <div class="input-container">
+        <label for="username">Username: </label>
+        <input type="text" id="username" name="login" pattern="username" required>
+        <br>
+        <label for="user-password">Password: </label>
+        <input type="password" id="user-password" name="login" pattern="password" required>
+        <br>
+        <input type="submit" value="Access" class="button">
+    </div>
+        </form>
+    </div>
+  </body>
 </html>
