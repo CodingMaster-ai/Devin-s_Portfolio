@@ -17,14 +17,89 @@
       <h1>Devin Sloan</h1>
       <nav>
         <ul>
-          <li>About Me</li>
+          <li><a href="./about.html">About Me</a></li>
         </ul>
       </nav>
     </header>
-    <p>
-      Welcome to my portfolio, where I feature key projects that demonstrate the
-      skills I've developed through Codecademy's Front-end Engineer course. Feel
-      free to explore my work, features, and the code behind each project.
-    </p>
+    <main>
+      <section class="introduction">
+        <img
+          src="./Resources/Images/Coding Workplace Setup.jpg"
+          alt="background"
+        />
+        <p>
+          Welcome to my portfolio, where I feature key projects that demonstrate
+          the skills I've developed through Codecademy's Front-end Engineer
+          course. Feel free to explore my work, features, and the code behind
+          each project.
+        </p>
+        <div class="button">
+          <button>Show Projects</button>
+        </div>
+      </section>
+      <section class="projects">
+        <h2>My Projects</h2>
+        <p>
+          Here are a few of my top projects that showcase my skills as a
+          Front-end Developer.
+        </p>
+        <div class="image-container">
+          <div class="image-overlay">
+            <img
+              class="screenshot"
+              src="./Resources/Images/Luxury on a Budget.jpeg"
+              alt="Company Webpage"
+            />
+            <div class="content">
+              <h2 class="title-1">Luxury on a Budget</h2>
+              <p class="description-1">
+                This is my Company Homepage project, featuring a premium rental
+                car page designed for stylish, affordable driving. Developed in
+               <span>Visual Studio Code</span> using <span>HTML and CSS</span>.
+              </p>
+              <a href="https://codingmaster-ai.github.io/Budget-Luxury/" target="_blank">
+              <button>Visit Page</button></a>
+            </div>
+          </div>
+          <div class="image-overlay">
+            <img
+              class="screenshot"
+              src="./Resources/Images/GameTime Cafe.jpeg"
+              alt="Club Webpage"
+            />
+            <div class="content">
+              <h2 class="title-2">GameTime Café</h2>
+              <p class="description-2">
+                This is a club webpage for GameTime Café, a family-friendly
+                venue offering food, games, and karaoke. Developed in <span>Visual
+                Studio Code</span> using <span>HTML and CSS</span>.
+              </p>
+              <a href="https://codingmaster-ai.github.io/GameTime-Cafe/" target="_blank">
+              <button>Visit Page</button></a>
+            </div>
+          </div>
+        </div>
+        <button>Show Skills</button>
+      </section>
+      <section class="skills">
+        <h2>My Skills</h2>
+        <p class="subheading">Below are the programming languages and text editor I have learned and utilize currently.</p>
+        <div class="logo-container">
+            <img src="./Resources/Images/HTML5 Logo.svg" alt="HTML5 Logo">
+            <img src="./Resources/Images/CSS Logo.svg" alt="CSS Logo">
+            <img src="./Resources/Images/JavaScript Logo.svg" alt="JavaScript Logo">
+            <img src="./Resources/Images/Visual Studio Code Logo.svg" alt="Visual Studio Code Logo">
+            <p class="label">HTML</p>
+            <p class="label">CSS</p>
+            <p class="label">JavaScript</p>
+            <p class="label">Visual Studio Code <br>
+            Text Editor</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+        <p>&copy Copyright by Devin Sloan</p>
+        <p>Developed January 2025</p>
+    </footer>
   </body>
 </html>
