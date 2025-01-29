@@ -102,7 +102,7 @@ button:active {
 
 /* Projects */
 
-.projects {
+#projects {
     height: 35rem;
     background-color: whitesmoke;
     color: #001F3F;
@@ -110,17 +110,17 @@ button:active {
     display: none;
 }
 
-.projects h2 {
+#projects h2 {
     font-size: 2rem;
     padding-top: 1rem;
     margin-bottom: 1rem;
 }
 
-.projects p {
+#projects p {
     font-size: 1.3rem;
 }
 
-.projects img {
+#projects img {
     width: 35rem;
     margin-top: 2.8rem;
     box-shadow: 12px 12px 2px 1px rgb(0, 31, 63, 0.4);
@@ -203,7 +203,7 @@ span {
     font-style: italic;
 }
 
-.projects button {
+#projects button {
     background-color: #001F3F;
     color: white;
     padding: 0.7rem;
@@ -211,22 +211,22 @@ span {
     border-radius: 25px;
     font-size: 1.2rem;
     font-weight: 300;
-    margin-top: 2rem;
+    margin-top: 0.7rem;
 }
 
-.projects button:hover {
+#projects button:hover {
     cursor: pointer;
     background-color: #0059B3;
     transition: background-color 200ms ease-in-out;
 }
 
-.projects button:active {
+#projects button:active {
     font-weight: 400;
 }
 
 /* Skills */
 
-.skills {
+#skills {
     background-color: whitesmoke;
     height: 28rem;
     display: none;
@@ -238,11 +238,11 @@ span {
     text-align: center;
 }
 
-.skills img {
+#skills img {
     width: 10rem;
 }
 
-.skills h2 {
+#skills h2 {
     font-size: 2rem;
     padding-top: 1rem;
     margin-bottom: 1rem;
@@ -253,7 +253,7 @@ span {
     margin-bottom: 2.5rem;
 }
 
-.skills h2, .subheading {
+#skills h2, .subheading {
     text-align: center;
     color: #001F3F;
 }
