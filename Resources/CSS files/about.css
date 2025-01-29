@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    color: #001F3F;
+    background-color: whitesmoke;
+}
+
+/* Navigation */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0 0.5rem 0;
+    background-color: #0059B3;
+}
+
+h1 {
+    margin-left: 2.5rem;
+    color: white;
+    background-color: #0059B3;
+}
+
+ul {
+    background-color: #0059B3;
+}
+
+li {
+    list-style-type: none;
+    margin-right: 2.5rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+a {
+    color: white;
+    background-color: #0059B3;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    font-weight: 400;
+}
+
+/* About Me */
+
+.bio {
+    height: auto;
+}
+
+.bio h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+.auto-biography {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bio p {
+    width: 45rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.bio img {
+    width: 20rem;
+    border-radius: 25px;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+hr {
+    border: 1px solid;
+    margin: 0 auto;
+    width: 80rem;
+}
+
+/* Contact Me */
+
+.contact h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem 0 1rem 0;
+}
+
+.contact p {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-brands, .fa-regular {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    background-color: unset;
+    margin-bottom: 2.5rem;
+}
+
+.contact a {
+    background-color: unset;
+}
+
+.contact i:hover {
+    color: #0059B3;
+    transition: color 0.25s ease;
+}
