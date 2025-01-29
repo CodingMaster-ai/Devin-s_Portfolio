@@ -104,9 +104,10 @@ button:active {
 
 .projects {
     height: 35rem;
-    background-color: lightgray;
+    background-color: whitesmoke;
     color: #001F3F;
     text-align: center;
+    display: none;
 }
 
 .projects h2 {
@@ -226,8 +227,9 @@ span {
 /* Skills */
 
 .skills {
-    background-color: lightgray;
+    background-color: whitesmoke;
     height: 28rem;
+    display: none;
 }
 
 .label {
