@@ -19,6 +19,10 @@ header {
     z-index: 1;
 }
 
+.mobile {
+    display: none;
+}
+
 main {
     position: relative;
     top: 3rem;
@@ -73,11 +77,15 @@ a:active {
     opacity: 0.8;
 }
 
+#small-screen {
+    display: none;
+}
+
 .button {
     display: flex;
     justify-content: center;
     position: relative;
-    bottom: 24rem;
+    bottom: 26rem;
 }
 
 .introduction button {
@@ -103,7 +111,7 @@ button:active {
 /* Projects */
 
 #projects {
-    height: 35rem;
+    height: 36rem;
     background-color: whitesmoke;
     color: #001F3F;
     text-align: center;
@@ -118,6 +126,10 @@ button:active {
 
 #projects p {
     font-size: 1.3rem;
+}
+
+.subheading-extra, .subheading-extra-2 {
+    display: none;
 }
 
 #projects img {
@@ -224,6 +236,10 @@ span {
     font-weight: 400;
 }
 
+#projects #button-2 {
+    margin-top: 1.2rem;
+}
+
 /* Skills */
 
 #skills {
@@ -232,10 +248,11 @@ span {
     display: none;
 }
 
-.label {
+figcaption {
     font-size: 1.5rem;
     color: #001F3F;
     text-align: center;
+    margin-top: 0.5rem;
 }
 
 #skills img {
@@ -260,26 +277,252 @@ span {
 
 .logo-container {
     display: grid;
-    grid-template: 1fr 80px / repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     align-items: center;
 }
 
 /* Footer */
 
-footer {
+footer ul {
     position: relative;
     bottom: 0;
+    top: 0.3rem;
     height: 3rem;
     background-color: #0059B3;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0.5rem 0 0.5rem 0;
 }
 
-footer p {
+footer li {
     color: white;
     margin: 0 2.5rem 0 2.5rem;
     font-weight: 300;
     font-size: 1.1rem;
+}
+
+/* Responsive Styles */
+
+@media only screen and (max-width: 1024px) {
+    main {
+        top: 3.4rem;
+    }
+    
+    .introduction {
+        height: 29.7rem;
+    }
+
+    .introduction img {
+        height: 41.8rem;
+    }
+
+    #projects {
+        position: relative;
+        top: 12rem;
+        height: 28.5rem;
+    }
+
+    #skills {
+        position: relative;
+        top: 12rem;
+        height: 25.5rem;
+    }
+
+    .button {
+        bottom: 24.5rem;
+    }
+
+    .content {
+        bottom: 2.9rem;
+        left: 2.8rem;
+        width: 26rem;
+        height: 13.6rem;
+        border-radius: 10px;
+    }
+
+    #projects img {
+        width: 26rem;
+    }
+
+   #projects .description-1 {
+        width: 24rem;
+        left: 1rem;
+        font-size: 1.1rem;
+        margin: 0.4rem 0 0.4rem 0;
+    }
+
+    #projects .description-2 {
+        left: 1rem;
+        font-size: 1.1rem;
+        margin: 0.4rem 0 0.4rem 0;
+    }
+
+    #projects .content h2 {
+        margin: unset;
+        padding-top: 0.75rem;
+        font-size: 1.75rem;
+    }
+
+    #projects #button-2 {
+        margin-top: 1.5rem;
+    }
+
+    footer ul {
+    top: 15.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .introduction p {
+        width: 44rem;
+        font-size: 2rem;
+        bottom: 37rem;
+    }
+
+    .button {
+        bottom: 27rem;
+    }
+
+    #projects {
+        height: 47.5rem;
+        top: 28.2rem;
+    }
+
+    .image-container {
+        grid-template-columns: unset;
+    }
+
+    .logo-container {
+        grid-template: 1fr 270px / repeat(2, 1fr);
+    }
+
+    .content {
+        left: 0;
+    }
+
+    #skills {
+        height: 40rem;
+        top: 28.3rem;
+    }
+
+    .original {
+        display: none;
+    }
+
+    .subheading-extra {
+        display: block;
+        font-size: 2rem;
+    }
+
+    .subheading {
+        display: none;
+    }
+
+    .subheading-extra-2 {
+        display: block;
+        font-size: 1.3rem;
+        margin-bottom: 2.5rem;
+        text-align: center;
+        color: #001F3F;
+    }
+
+    #small-screen {
+        display: block;
+        height: 58rem;
+    }
+
+    #large-screen {
+        display: none;
+    }
+
+    footer ul {
+        top: 31.7rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        margin-left: 1.5rem;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        width: 3.3rem;
+    }
+
+    .introduction p {
+        width: 24rem;
+        font-size: 1.8rem;
+        bottom: 44rem;
+    }
+
+    .button {
+        bottom: 35rem;
+    }
+
+    .subheading-extra {
+        width: 20rem;
+        position: relative;
+        left: 3.5rem;
+    }
+
+    #projects img {
+        width: 24rem;
+    }
+
+    .content {
+        width: 24rem;
+        height: 12.6rem;
+    }
+
+    #projects .description-1 {
+        width: 20rem;
+        left: 2.1rem;
+        font-size: 1rem;
+        margin: 0.1rem 0 0.1rem 0;
+    }
+
+    #projects .description-2 {
+        width: 20rem;
+        left: 2.1rem;
+        margin: 0.1rem 0 0.1rem 0;
+    }
+
+    #projects #button-2 {
+        margin-top: 1.7rem;
+    }
+
+    #skills {
+        height: 70rem;
+    }
+
+    .subheading-extra-2 {
+        width: 20rem;
+        position: relative;
+        left: 3.4rem;
+    }
+
+    .logo-container {
+        grid-template: unset;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    footer li {
+        margin: 0 1rem 0 1rem;
+        font-size: 1rem;
+    }
+}
+
+/* Extra Styles */
+
+@media only screen and (min-width: 920px) and (max-width: 950px) {
+    .content {
+        left: 1.6rem;
+    }
 }

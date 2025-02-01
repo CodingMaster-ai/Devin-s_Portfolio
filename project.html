@@ -9,24 +9,32 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="./Resources/CSS files/project.css" />
     <title>My Personal Portfolio</title>
   </head>
   <body>
+
+    <!-- Navigation Bar -->
+
     <header>
       <h1>Devin Sloan</h1>
       <nav>
-        <ul>
+        <ul class="desktop">
           <li><a href="about.html">About Me</a></li>
+        </ul>
+        <ul class="mobile">
+          <li><a href="about.html"><i class="fa-regular fa-user fa-xl"></i></a></li>
         </ul>
       </nav>
     </header>
     <main>
+
+      <!-- Intro -->
+
       <section class="introduction">
-        <img
-          src="./Resources/Images/Coding Workplace Setup.jpg"
-          alt="background"
-        />
+        <img id="large-screen" src="./Resources/Images/Coding Workplace Setup.jpg" alt="background" />
+        <img id="small-screen" src="./Resources/Images/Coding Workplace Setup Pt2.jpg" alt="">
         <p>
           Welcome to my portfolio, where I feature key projects that demonstrate
           the skills I've developed through Codecademy's Front-end Engineer
@@ -34,13 +42,20 @@
           each project.
         </p>
         <div class="button">
-          <button id="button-1">Show Projects</button>
+          <button id="button-1" class="disappear">Show Projects</button>
         </div>
       </section>
+
+      <!-- My Projects -->
+
       <section id="projects">
         <h2>My Projects</h2>
-        <p>
+        <p class="original">
           Here are a few of my top projects that showcase my skills as a
+          Front-end Developer.
+        </p>
+        <p class="subheading-extra">
+          Here are a few of my top projects <br> that showcase my skills as a
           Front-end Developer.
         </p>
         <div class="image-container">
@@ -81,25 +96,42 @@
         </div>
         <button id="button-2">Show Skills</button>
       </section>
+
+      <!-- My Skills -->
+
       <section id="skills">
         <h2>My Skills</h2>
         <p class="subheading">Below are the programming languages and text editor I have learned and utilize currently.</p>
+        <p class="subheading-extra-2">Below are the programming languages and text editor <br> I have learned and utilize currently.</p>
         <div class="logo-container">
+          <figure>
             <img src="./Resources/Images/HTML5 Logo.svg" alt="HTML5 Logo">
+            <figcaption>HTML</figcaption>
+          </figure>
+          <figure>
             <img src="./Resources/Images/CSS Logo.svg" alt="CSS Logo">
+            <figcaption>CSS</figcaption>
+          </figure>
+          <figure>
             <img src="./Resources/Images/JavaScript Logo.svg" alt="JavaScript Logo">
+            <figcaption>JavaScript</figcaption>
+          </figure>
+          <figure>
             <img src="./Resources/Images/Visual Studio Code Logo.svg" alt="Visual Studio Code Logo">
-            <p class="label">HTML</p>
-            <p class="label">CSS</p>
-            <p class="label">JavaScript</p>
-            <p class="label">Visual Studio Code <br>
-            Text Editor</p>
+            <figcaption>Visual Studio Code <br>
+            Text Editor</figcaption>
+          </figure>
         </div>
       </section>
     </main>
+
+    <!-- Footer -->
+
     <footer>
-        <p>&copy Copyright by Devin Sloan</p>
-        <p>Developed January 2025</p>
+      <ul>
+        <li>&copy Copyright by Devin Sloan</li>
+        <li>Developed January 2025</li>
+      </ul>
     </footer>
     <script src="./Resources/JavaScript/script.js"></script>
   </body>
